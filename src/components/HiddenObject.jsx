@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const HiddenObject = ({ id, position, onClick }) => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   const handleClick = () => {
     setIsVisible(!isVisible);
@@ -10,15 +10,17 @@ const HiddenObject = ({ id, position, onClick }) => {
 
   return (
     isVisible && (
-      <rect
-        x={position.x}
-        y={position.y}
-        width="10"
-        height="10"
-        fill="#ff11ff"
-        onClick={handleClick}
-        cursor="pointer"
-      />
+      <svg>
+        <rect
+          x={position.x}
+          y={position.y}
+          width="50"
+          height="50"
+          fill="#ff11ff"
+          onClick={handleClick}
+          cursor="pointer"
+        />
+      </svg>
     )
   );
 };

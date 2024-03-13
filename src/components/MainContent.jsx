@@ -3,7 +3,7 @@ import HiddenObject from "./HiddenObject";
 import PopupForm from "./PopupForm";
 
 const MainContent = () => {
-  const totalObjects = 5; // Total number of HiddenObject components
+  const totalObjects = 1; // Total number of HiddenObject components
   const [clickedCount, setClickedCount] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
 
