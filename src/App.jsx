@@ -1,7 +1,11 @@
+import Loading from './components/Loading/Loading'
+import './App.css'
+
 function App() {
     return (
         <>
-        <h1>Bienvenue sur le site des JPO</h1>
+            <Loading />
+            <h1>Bienvenue sur le site des JPO</h1>
         </>
     )
 }

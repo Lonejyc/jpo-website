@@ -1,0 +1,34 @@
+/* Ajout des animations */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.slider {
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    animation: slide 10s linear infinite running;
+}
+
+.slider-item {
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    white-space: pre;
+    margin: 0 .5em;
+    padding: .5em;
+    font: 700 3rem system-ui;
+}
