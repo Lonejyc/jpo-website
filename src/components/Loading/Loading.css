@@ -1,10 +1,3 @@
-.hidden {
-    display: none;
-}
-
-.active {
-    display: block;
-}
 
 .loading-page {
     display: flex;
@@ -25,4 +18,12 @@
     &:hover {
         background-color: #00a043;
     }
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
 }
