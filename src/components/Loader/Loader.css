@@ -1,3 +1,12 @@
+:root {
+    --sgm: rgb(199, 33, 33);
+    --gaco: rgb(102, 175, 225);
+    --mmi: rgb(73, 174, 87);
+    --pec: rgb(232, 105, 9);
+    --gccd: rgb(247, 176, 20);
+    --black: rgb(0, 0, 0);
+}
+
 .loader {
     display: flex;
     position: absolute;
@@ -59,7 +68,7 @@
     left: 0;
     width: 10px;
     height: 10px;
-    background: rgb(44, 143, 255);
+    background: var(--black);
     border-radius: 50%;
     -webkit-animation: ball624 4s infinite;
     animation: ball624 4s infinite;
@@ -150,6 +159,11 @@
 @-webkit-keyframes barUp1 {
     0% {
         transform: scale(1, 0.2);
+        background: var(--sgm);
+    }
+
+    10% {
+        background: var(--black);
     }
 
     40% {
@@ -160,34 +174,49 @@
         transform: scale(1, 1);
     }
 
+    85% {
+        background: var(--black);
+    }
+
     90% {
         transform: scale(1, 1);
     }
 
     100% {
         transform: scale(1, 0.2);
+        background: var(--sgm);
     }
 }
 
 @keyframes barUp1 {
     0% {
         transform: scale(1, 0.2);
+        background: var(--sgm);
     }
 
+    10% {
+        background: var(--black);
+    }
+    
     40% {
         transform: scale(1, 0.2);
     }
-
+    
     50% {
         transform: scale(1, 1);
     }
 
+    85% {
+        background: var(--black);
+    }
+    
     90% {
         transform: scale(1, 1);
     }
 
     100% {
         transform: scale(1, 0.2);
+        background: var(--sgm);
     }
 }
 
@@ -195,6 +224,18 @@
     0% {
         transform: scale(1, 0.4);
     }
+    
+    5% {
+        background: var(--black);
+    }
+
+    10% {
+        background: var(--gaco);
+    }
+
+    20% {
+        background: var(--black);
+    }
 
     40% {
         transform: scale(1, 0.4);
@@ -204,12 +245,18 @@
         transform: scale(1, 0.8);
     }
 
+    75% {
+        background: var(--black);
+    }
+
     90% {
         transform: scale(1, 0.8);
+        background: var(--gaco);
     }
 
     100% {
         transform: scale(1, 0.4);
+        background: var(--black);
     }
 }
 
@@ -218,6 +265,18 @@
         transform: scale(1, 0.4);
     }
 
+    5% {
+        background: var(--black);
+    }
+
+    10% {
+        background: var(--gaco);
+    }
+
+    20% {
+        background: var(--black);
+    }
+
     40% {
         transform: scale(1, 0.4);
     }
@@ -226,18 +285,48 @@
         transform: scale(1, 0.8);
     }
 
+    80% {
+        background: var(--black);
+    }
+
     90% {
         transform: scale(1, 0.8);
+        background: var(--gaco);
     }
 
     100% {
         transform: scale(1, 0.4);
+        background: var(--black);
     }
 }
 
 @-webkit-keyframes barUp3 {
     0% {
         transform: scale(1, 0.6);
+    }
+
+    15% {
+        background: var(--black);
+    }
+
+    20% {
+        background: var(--mmi);
+    }
+
+    30% {
+        background: var(--black);
+    }
+
+    65% {
+        background: var(--black);
+    }
+
+    80% {
+        background: var(--mmi);
+    }
+
+    90% {
+        background: var(--black);
     }
 
     100% {
@@ -250,6 +339,30 @@
         transform: scale(1, 0.6);
     }
 
+    15% {
+        background: var(--black);
+    }
+
+    20% {
+        background: var(--mmi);
+    }
+
+    30% {
+        background: var(--black);
+    }
+
+    65% {
+        background: var(--black);
+    }
+
+    80% {
+        background: var(--mmi);
+    }
+
+    90% {
+        background: var(--black);
+    }
+
     100% {
         transform: scale(1, 0.6);
     }
@@ -260,12 +373,33 @@
         transform: scale(1, 0.8);
     }
 
+    25% {
+        background: var(--black);
+    }
+
+    30% {
+        background: var(--pec);
+    }
+
     40% {
         transform: scale(1, 0.8);
+        background: var(--black);
     }
 
     50% {
         transform: scale(1, 0.4);
+    }
+
+    55% {
+        background: var(--black);
+    }
+
+    70% {
+        background: var(--pec);
+    }
+
+    80% {
+        background: var(--black);
     }
 
     90% {
@@ -282,12 +416,33 @@
         transform: scale(1, 0.8);
     }
 
+    25% {
+        background: var(--black);
+    }
+
+    30% {
+        background: var(--pec);
+    }
+
     40% {
         transform: scale(1, 0.8);
+        background: var(--black);
     }
 
     50% {
         transform: scale(1, 0.4);
+    }
+
+    55% {
+        background: var(--black);
+    }
+
+    70% {
+        background: var(--pec);
+    }
+
+    80% {
+        background: var(--black);
     }
 
     90% {
@@ -296,7 +451,7 @@
 
     100% {
         transform: scale(1, 0.8);
-    }
+    }    
 }
 
 @-webkit-keyframes barUp5 {
@@ -304,12 +459,25 @@
         transform: scale(1, 1);
     }
 
+    35% {
+        background: var(--black);
+    }
+
     40% {
         transform: scale(1, 1);
+        background: var(--gccd);
     }
 
     50% {
         transform: scale(1, 0.2);
+    }
+
+    60% {
+        background: var(--gccd);
+    }
+
+    70% {
+        background: var(--black);
     }
 
     90% {
@@ -326,12 +494,25 @@
         transform: scale(1, 1);
     }
 
+    35% {
+        background: var(--black);
+    }
+
     40% {
         transform: scale(1, 1);
+        background: var(--gccd);
     }
 
     50% {
         transform: scale(1, 0.2);
+    }
+
+    60% {
+        background: var(--gccd);
+    }
+
+    70% {
+        background: var(--black);
     }
 
     90% {
