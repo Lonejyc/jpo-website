@@ -6,6 +6,8 @@ function App() {
         <>
             <MainContent />
         <h1>Bienvenue sur le site des JPO</h1>
+            <Loading />
+            <h1>Bienvenue sur le site des JPO</h1>
         </>
     )
 }

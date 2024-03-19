@@ -1,6 +1,26 @@
 import React, { useState } from "react";
 import HiddenObject from "./HiddenObject";
 import PopupForm from "./PopupForm";
+import PecEtage from "./Map/PecEtage";
+import PecRDC from "./Map/PecRDC";
+import PecPlein from "./Map/PecPlein";
+import {
+  Couloir,
+  GacoEtage,
+  GacoPlein,
+  GacoRDC,
+  MMIEtage,
+  MMIPlein,
+  MMIRDC,
+  PecEtage,
+  PecPlein,
+  PecRDC,
+  SGMEtage,
+  SGMPlein,
+  SGMRDC,
+} from "./Map";
+
+
 
 const MainContent = () => {
   const totalObjects = 1; // Total number of HiddenObject components
@@ -17,48 +37,47 @@ const MainContent = () => {
     });
   };
 
-    return (
-      <div>
-        <div id="main-content">
-          {/* Le contenu principal de votre site, y compris la carte SVG, ira ici. */}
-          <svg
-            width="516"
-            height="318"
-            viewBox="0 0 516 318"
-            fill="yellow"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            {/* SVG content goes here. */}
-          </svg>
+  return (
+    <div>
+      <div id="main-content"> <Couloir />
+        {/* Le contenu principal de votre site, y compris la carte SVG, ira ici. */}
+        <svg
+          width="516"
+          height="316"
+          viewBox="0 0 1440 1080"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <PecPlein />
+          <PecEtage />
+          <PecRDC />
+        </svg>
 
-          {/* Vous pouvez inclure d'autres composants ici, comme un PopupForm ou des boutons de navigation. */}
+        {/* Vous pouvez inclure d'autres composants ici, comme un PopupForm ou des boutons de navigation. */}
 
-          <div className="buttons">
-            <a href="#" className="floor low">
-              0
-            </a>
-            <a href="#" className="floor high">
-              1
-            </a>
-          </div>
+        <div className="buttons">
+          <a href="#" className="floor low">
+            0
+          </a>
+          <a href="#" className="floor high">
+            1
+          </a>
         </div>
-
-        {/* HiddenObject instances here, passing handleObjectClick to each */}
-        <HiddenObject
-          id="obj1"
-          position={{ x: 100, y: 200 }}
-          onClick={handleObjectClick}
-        />
-        {/* Repeat for other HiddenObjects */}
-
-        {showPopup && (
-          <PopupForm
-            isVisible={showPopup}
-            onClose={() => setShowPopup(false)}
-          />
-        )}
       </div>
-    );
+
+      {/* HiddenObject instances here, passing handleObjectClick to each */}
+      <HiddenObject
+        id="obj1"
+        position={{ x: 100, y: 200 }}
+        onClick={handleObjectClick}
+      />
+      {/* Repeat for other HiddenObjects */}
+
+      {showPopup && (
+        <PopupForm isVisible={showPopup} onClose={() => setShowPopup(false)} />
+      )}
+    </div>
+  );
 };
 
 export default MainContent;
