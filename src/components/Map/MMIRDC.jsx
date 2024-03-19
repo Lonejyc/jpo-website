@@ -1,93 +1,93 @@
 import * as React from "react";
 const SvgComponent = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.79 385" {...props}>
+  <g {...props}>
     <defs>
       <style>
-        {".cls-1{fill:#49ae57;stroke:#1d1d1b;stroke-miterlimit:10;}"}
+        {".room{fill:#49ae57;stroke:#1d1d1b;stroke-miterlimit:10;}"}
       </style>
     </defs>
     <g id="Calque_2" data-name="Calque 2">
       <g id="MMI_0" data-name="MMI 0">
         <path
-          className="cls-1"
+          className="room"
           d="M78.12,123.56V88.33H56.67V.87A180.83,180.83,0,0,0,.5,13.78V81.69H45.69v19.92h11v93.44H.5v16.34H56.67V384.5H78.12V159.82H98v-8.68h36.26V123.56H78.12Z"
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="113.75 88.33 80.16 88.33 78.37 88.33 78.12 88.33 78.12 123.56 78.37 123.56 134.29 123.56 134.29 88.33 115.39 88.33 113.75 88.33"
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="40.79 157.27 56.67 157.27 56.67 123.56 0.5 123.56 0.5 157.27 35.73 157.27 40.79 157.27"
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="56.67 123.56 56.67 101.61 55.65 101.61 52.18 101.61 45.69 101.61 0.5 101.61 0.5 123.56 56.67 123.56"
         />
         <rect
-          className="cls-1"
+          className="room"
           x={0.5}
           y={81.69}
           width={45.19}
           height={19.91}
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="35.73 177.18 35.73 157.27 0.5 157.27 0.5 195.05 35.73 195.05 35.73 177.18"
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="40.79 157.27 35.73 157.27 35.73 177.18 56.67 177.18 56.67 157.27 40.79 157.27"
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="35.73 177.18 35.73 195.05 55.65 195.05 56.67 195.05 56.67 177.18 35.73 177.18"
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="95.13 189.95 80.35 189.95 80.16 189.95 78.12 189.95 78.12 222.63 134.29 222.63 134.29 189.95 98.03 189.95 95.13 189.95"
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="98.03 159.82 98.03 189.95 134.29 189.95 134.29 151.14 98.03 151.14 98.03 159.82"
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="80.35 189.95 95.13 189.95 98.03 189.95 98.03 159.82 80.35 159.82 78.12 159.82 78.12 189.95 80.16 189.95 80.35 189.95"
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="56.67 287.99 56.67 211.39 55.65 211.39 0.5 211.39 0.5 287.99 56.67 287.99"
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="0.5 287.99 0.5 384.5 55.65 384.5 56.67 384.5 56.67 287.99 0.5 287.99"
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="80.16 287.99 78.12 287.99 78.12 384.5 80.35 384.5 134.29 384.5 134.29 287.99 80.35 287.99 80.16 287.99"
         />
         <rect
-          className="cls-1"
+          className="room"
           x={78.12}
           y={222.63}
           width={56.17}
           height={32.68}
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="78.12 255.31 78.12 287.99 80.16 287.99 80.35 287.99 134.29 287.99 134.29 255.31 78.12 255.31"
         />
         <path
-          className="cls-1"
+          className="room"
           d="M74.29.65Q70.88.5,67.39.5c-3.3,0-6.53.11-9.7.3l-1,.07V88.33H78.12V67.39h37.27V88.33h18.9V13.78A181,181,0,0,0,74.29.65Z"
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="80.16 88.33 113.75 88.33 115.39 88.33 115.39 67.39 80.16 67.39 78.12 67.39 78.12 88.33 78.37 88.33 80.16 88.33"
         />
       </g>
     </g>
-  </svg>
+  </g>
 );
 export default SvgComponent;

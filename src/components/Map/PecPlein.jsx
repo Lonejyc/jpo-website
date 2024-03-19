@@ -1,21 +1,19 @@
 import * as React from "react";
 const SvgComponent = (props) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 158.27 569.16"
+  <g
     {...props}
   >
     <defs>
-      <style>{".cls-1{fill:#e86909;stroke:#000;stroke-miterlimit:10;}"}</style>
+      <style>{".room{fill:#e86909;stroke:#000;stroke-miterlimit:10;}"}</style>
     </defs>
     <g id="Calque_2" data-name="Calque 2">
       <g id="Ailes">
         <polygon
-          className="cls-1"
+          className="room"
           points="109.77 0.5 93.94 0.5 0.5 0.5 0.5 97.6 0.5 116.24 0.5 172 0.5 222.89 0.5 239.74 0.5 246.2 0.5 269.35 0.5 299.39 0.5 320.49 0.5 321.44 0.5 362.37 0.5 479.43 0.5 522.32 0.5 568.66 50.92 568.66 83.47 568.66 93.94 568.66 157.77 568.66 157.77 537.26 157.77 507.39 157.77 463.73 157.77 458.37 157.77 407.81 157.77 378.71 157.77 362.37 157.77 297.52 157.77 289.86 157.77 214.28 157.77 201.77 157.77 178.54 157.77 149.29 157.77 127.47 157.77 116.24 157.77 97.6 157.77 34.28 157.77 0.5 109.77 0.5"
         />
       </g>
     </g>
-  </svg>
+  </g>
 );
 export default SvgComponent;

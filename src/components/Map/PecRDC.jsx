@@ -1,131 +1,129 @@
 import * as React from "react"
 const SvgComponent = (props) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 158.27 569.16"
+  <g
     {...props}
   >
     <defs>
-      <style>{".cls-1{fill:#e86909;stroke:#000;stroke-miterlimit:10;}"}</style>
+      <style>{".room{fill:#e86909;stroke:#000;stroke-miterlimit:10;}"}</style>
     </defs>
     <g id="Calque_2" data-name="Calque 2">
       <g id="PEC_0" data-name="PEC 0">
         <rect
-          className="cls-1"
+          className="room"
           x={0.5}
           y={299.39}
           width={65.32}
           height={22.05}
         />
         <polygon
-          className="cls-1"
+          className="room"
           points="157.77 178.54 157.77 214.28 132.24 214.28 132.24 191.5 93.94 191.5 93.94 178.54 157.77 178.54"
         />
         <rect
-          className="cls-1"
+          className="room"
           x={93.94}
           y={214.28}
           width={63.83}
           height={83.24}
         />
         <rect
-          className="cls-1"
+          className="room"
           x={93.94}
           y={297.52}
           width={63.83}
           height={64.85}
         />
         <rect
-          className="cls-1"
+          className="room"
           x={93.94}
           y={362.37}
           width={63.83}
           height={96}
         />
         <rect
-          className="cls-1"
+          className="room"
           x={93.94}
           y={458.37}
           width={63.83}
           height={110.29}
         />
         <rect
-          className="cls-1"
+          className="room"
           x={0.5}
           y={0.5}
           width={109.27}
           height={115.74}
         />
         <rect
-          className="cls-1"
+          className="room"
           x={0.5}
           y={116.24}
           width={65.32}
           height={106.65}
         />
         <rect
-          className="cls-1"
+          className="room"
           x={93.94}
           y={149.29}
           width={15.83}
           height={29.25}
         />
         <rect
-          className="cls-1"
+          className="room"
           x={109.77}
           y={149.29}
           width={48}
           height={29.25}
         />
         <rect
-          className="cls-1"
+          className="room"
           x={24.42}
           y={321.44}
           width={41.4}
           height={40.93}
         />
         <rect
-          className="cls-1"
+          className="room"
           x={0.5}
           y={321.44}
           width={23.92}
           height={40.93}
         />
         <rect
-          className="cls-1"
+          className="room"
           x={18.59}
           y={465.44}
           width={47.23}
           height={63.91}
         />
         <rect
-          className="cls-1"
+          className="room"
           x={93.94}
           y={191.5}
           width={38.3}
           height={22.78}
         />
-        <rect className="cls-1" x={109.77} y={0.5} width={48} height={115.74} />
+        <rect className="room" x={109.77} y={0.5} width={48} height={115.74} />
         <rect
-          className="cls-1"
+          className="room"
           x={0.5}
           y={239.74}
           width={65.32}
           height={29.61}
         />
         <rect
-          className="cls-1"
+          className="room"
           x={0.5}
           y={269.35}
           width={65.32}
           height={30.04}
         />
         <path
-          className="cls-1"
+          className="room"
           d="M65.82,116.24V222.89H.5v16.85H65.82V362.37H.5V568.66H93.94V149.29h63.83v-33ZM18.59,391H44.45v30H18.59ZM65.82,529.35H18.59V465.44H65.82Z"
         />
         <rect
-          className="cls-1"
+          className="room"
           x={18.59}
           y={390.96}
           width={25.86}
@@ -133,6 +131,6 @@ const SvgComponent = (props) => (
         />
       </g>
     </g>
-  </svg>
+  </g>
 )
 export default SvgComponent
