@@ -10,7 +10,13 @@ const HiddenObject = ({ id, position, onClick }) => {
 
   return (
     isVisible && (
-      <svg>
+      <svg
+        width="516"
+        height="318"
+        viewBox="0 0 516 318"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <rect
           x={position.x}
           y={position.y}
