@@ -1,9 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import HiddenObject from "./HiddenObject";
 import PopupForm from "./PopupForm";
-import PecEtage from "./Map/PecEtage";
-import PecRDC from "./Map/PecRDC";
-import PecPlein from "./Map/PecPlein";
 import {
   Couloir,
   GacoEtage,
@@ -26,6 +23,7 @@ const MainContent = () => {
   const totalObjects = 1; // Total number of HiddenObject components
   const [clickedCount, setClickedCount] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
+  const svgContainerRef = useRef(null);
 
   const handleObjectClick = (id) => {
     setClickedCount((prevCount) => {
@@ -36,23 +34,42 @@ const MainContent = () => {
       return newCount;
     });
   };
+  const handleClickRoom = (e) => {
+    console.log('room clicked !', e.target);
+  };
+
+  useEffect(() => {
+    const element = svgContainerRef.current;
+    element.querySelectorAll(".room").forEach((svgEl) => {
+      svgEl.addEventListener("click", handleClickRoom);
+    });
+
+    return () => {
+      element.querySelectorAll(".room").forEach((svgEl) => {
+        svgEl.removeEventListener("click", handleClickRoom);
+      });
+    }
+  }, []);
 
   return (
     <div>
-      <div id="main-content"> <Couloir />
-        {/* Le contenu principal de votre site, y compris la carte SVG, ira ici. */}
-        <svg
-          width="516"
-          height="316"
-          viewBox="0 0 1440 1080"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <PecPlein />
-          <PecEtage />
-          <PecRDC />
+      <div id="main-content">
+        <svg width="1440" height="1080" ref={svgContainerRef}>
+          <Couloir width={200} />
+          {/* Le contenu principal de votre site, y compris la carte SVG, ira ici. */}
+          <PecPlein width={200} />
+          <PecEtage width={200} />
+          <PecRDC width={200} />
+          <GacoPlein width={200} />
+          <GacoEtage width={200} />
+          <GacoRDC width={200} />
+          <MMIPlein width={200} />
+          <MMIEtage width={200} />
+          <MMIRDC width={200} />
+          <SGMPlein width={200} />
+          <SGMEtage width={200} />
+          <SGMRDC width={200} />
         </svg>
-
         {/* Vous pouvez inclure d'autres composants ici, comme un PopupForm ou des boutons de navigation. */}
 
         <div className="buttons">
